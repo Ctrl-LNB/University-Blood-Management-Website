@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be a Donor - UUBC</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/be_donor.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+        <nav class="navigation_bar">
+            <div class="small-nav">
+                <div class="header-logo-container">
+                    <div class="small-icon-container flex">
+                        <img src="images/logo1.png" alt="UUBC Logo"
+                            class="small-logo logo">
+                        <section class="nav-heading">
+                            <h1>Uttara University Blood Club</h1>
+                            <p>Join us in saving lives — every drop counts!</p>
+                        </section>
+                    </div>
+
+                    <i class="fa-solid fa-bars expand-btn" id="expand-btn"></i>
+                </div>
+
+                <ul id="nav-menu">
+                    <li><a href="index.html">|Home</a></li>
+                    <li><a href="about_us.html">|About Us</a></li>
+                    <li><a href="advisors.html">|Advisors</a></li>
+                    <li><a href="sponsors.html">|Sponsors</a></li>
+                    <li><a href="find_donor.html">|Need a Donor</a></li>
+                    <li><a href="be_donor.html" class="active">|Be a Donor</a></li>                  
+                    <li><a href="membership.html">|Membership</a></li>
+                    <li><a href="php/user.php">|User</a></li>
+                    <li><a href="php/admin.php">|Admin</a></li>
+                </ul>
+            </div>
+
+            <ul id="large-nav" class="large-nav">
+                <li><img src="images/logo1.png" alt="UUBC Logo"
+                        class="logo"></li>
+                <li><a href="index.html">|Home</a></li>
+                <li><a href="about_us.html">|About Us</a></li>
+                <li><a href="advisors.html">|Advisors</a></li>
+                <li><a href="sponsors.html">|Sponsors</a></li>
+                <li><a href="find_donor.html">|Need a Donor</a></li>
+                <li><a href="be_donor.html" class="active">|Be a Donor</a></li>                
+                <li><a href="membership.html">|Membership</a></li>
+                <li><a href="php/user.php">|User</a></li>
+                <li><a href="php/admin.php">|Admin</a></li>
+            </ul>
+        </nav>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Be a Donor</h1>
+    </header>
+
+    <!-- Form Section -->
+    <section class="content">
+    <h2 style="text-align: center;">Donor Registration Form</h2>
+
+    <form action="php/be_donor_action.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="full_name" required>
+
+        <!-- Gender input -->
+        <label>Gender:</label>
+        <div class="gender-options-inline">
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="id_number">ID Number:</label>
+        <input type="text" id="id_number" name="id_number" required>
+
+        <label for="blood">Blood Group:</label>
+        <select id="blood" name="blood_group" required>
+            <option value="">Select</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label for="last_donation_date">Last Donation Date:</label>
+        <input type="date" id="last_donation_date" name="last_donation_date" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone_num">Phone Number:</label>
+        <input type="text" id="phone_num" name="phone_number" required>
+
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="">Select</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Staff">Staff</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 | Uttara University Blood Club</p>
+            <p>Developed by: <strong>Team Metrorail</strong></p>
+
+             <h2>Our Team</h2>
+                <div class="team-profiles">
+                    <a href="https://github.com/Ctrl-LNB/" target="_blank"
+                        title="Lutfun Nahar Barsha">
+                        <img src="https://github.com/Ctrl-LNB.png"
+                            alt="Member 1">
+                    </a>
+
+                    <a href="https://github.com/Mrh-Script/" target="_blank"
+                        title="Md. Riad Hasan">
+                        <img src="https://github.com/Mrh-Script.png"
+                            alt="Member 2">
+                    </a>
+
+                    <a href="https://github.com/kowser-mahmood" target="_blank"
+                        title="Md. Kowser Mahmood">
+                        <img src="https://github.com/kowser-mahmood.png"
+                            alt="Member 3">
+                    </a>
+
+                    <a href="https://github.com/tanzimulahsan-10zim"
+                        target="_blank" title="Md. Tanzimul Ahsan">
+                        <img src="https://github.com/tanzimulahsan-10zim.png"
+                            alt="Member 4">
+                    </a>
+
+                    <a href="https://github.com/Jowel-Rana-JR-99" target="_blank"
+                        title="Md. Juwel Rana">
+                        <img src="https://github.com/Jowel-Rana-JR-99.png"
+                        alt="Member 5">
+                    </a>
+                </div>
+
+
+            <h2>Contact Us (UU)</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/UttaraUniversity" target="_blank" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/Uttara_Varsity" target="_blank" title="Twitter (X)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/c/UttaraUniversityofficial" target="_blank" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+        <script src="js/main.js"></script>
+</body>
+</html>
