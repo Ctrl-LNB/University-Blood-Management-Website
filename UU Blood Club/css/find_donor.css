@@ -1,0 +1,245 @@
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+.donor-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 95%;
+    margin: 20px auto;
+}
+
+.donor-card {
+    border: #b30000 solid 2px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.donor-card-container {
+    display: none;
+}
+
+
+/* Body Section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 100px;
+    background-image: url("cover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: white;
+    color: #b30000;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Form Section */
+.content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 100vw;
+    border-top: 3px solid #b30000;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
+/* 🌐 Responsive Media Queries */
+@media (max-width: 768px) {
+    .navigation_bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation_bar li {
+        margin: 10px 0;
+    }
+
+    .navigation_bar a {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .content, .donor-card-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .donor-card-container {
+        grid-template-columns: auto;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .navigation_bar a {
+        font-size: 16px;
+    }
+
+    .content {
+        width: 80%;
+        padding: 12px;
+    }
+
+
+    input, select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+
+/*Team Profile*/
+
+.team-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.team-profiles a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 2px solid white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-profiles a img:hover {
+    transform: scale(1.2);
+    border-color: #000;
+}

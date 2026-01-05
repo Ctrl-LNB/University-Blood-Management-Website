@@ -1,0 +1,296 @@
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Body Section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 100px; 
+    background-image: url("cover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar */
+.navigation_bar {
+    background-color: #b30000;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation_bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.navigation_bar li {
+    margin: 0 15px;
+}
+
+.navigation_bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.navigation_bar a:hover {
+    font-size: 25px;
+    color: black;
+}
+
+.navigation_bar a.active {
+    color: black;
+    font-size: 25px;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: white;
+    color: #b30000;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Form Section */
+.content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.gender-options-inline {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gender-options-inline input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 100vw;
+    border-top: 3px solid #b30000;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
+
+
+/* For tablets and small laptops (<= 768px) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+    }
+
+    .navigation_bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation_bar li {
+        margin: 8px 0;
+    }
+
+    .navigation_bar a {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .content {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+/* For small phones (<= 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .content {
+        width: 95%;
+        padding: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .navigation_bar a:hover {
+        font-size: 20px; 
+    }
+}
+
+/*Team Profile*/
+
+.team-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.team-profiles a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes it circular */
+    border: 2px solid white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-profiles a img:hover {
+    transform: scale(1.2);
+    border-color: #000;
+}
